@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Optional Chaining</title>
+</head>
+<body>
+  <h1>Optional Chaining</h1>
+</body>
+<script>
+
+// why we use optional chaining: because if we have sone doubt related to their object result then we use
+  let user={
+    name: "mahavir",
+    profession:"Software Developer",
+
+    getname: ()=>{
+      return user.name +" Kumar"
+    }
+  }
+
+  // console.log(user.life?.you);
+
+  console.log(user.getname?.());
+
+</script>
+</html>

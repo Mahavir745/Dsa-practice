@@ -1,0 +1,570 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/* root: variables */
+:root{
+  --font-color: rgb(85, 83, 83);
+  --font-color:aliceblue;
+  --bg-color2:aliceblue;
+  --bg-color: linear-gradient(120deg,rgb(255, 217, 80),rgb(255, 69, 208));
+}
+
+/* default */
+li{
+  list-style-type: none;
+}
+
+a{
+  text-decoration: none;
+}
+
+/* header start */
+
+header{
+  position: sticky;
+  top: 0%;
+
+  .header-container{
+    display: grid;
+    background-image: var(--bg-color);
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: 40px;
+    /* border:1px solid red; */
+
+    #social-links{
+      li{
+        border-left: 1px solid aliceblue;
+        padding: 2%;
+      }
+    }
+      ul{
+      display: flex;
+      align-items: center;
+      height: 40px;
+      justify-content: center;
+      gap: 5%;
+      /* border: 1px solid red; */
+
+      li{
+        font-size: 12px;
+        color: var(--font-color);
+
+      }
+    }
+
+    #child3{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    button{
+     background:transparent;
+     border: none;
+     color:var(--font-color);
+     outline: 2px solid var(--font-color);
+     padding: 1.5%;
+     border-radius: 20px;
+     font-size: 10px;
+     font-weight: 500;
+    }
+  }
+
+
+  .header-container2{
+    display: grid;
+    background-color: aliceblue;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: 60px;
+
+    .child{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      /* border: 1px solid red; */
+
+      h3{
+
+        i{
+          background-image: var(--bg-color);
+          background-clip: text;
+          color: transparent;
+          position: relative;
+          top: 4px;
+          font-size: 180%;
+          
+        }
+      }
+    }
+
+    #navlink{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      height: 60px;
+      /* border: 1px solid red; */
+      gap: 2%;
+      font-size: 75%;
+
+      li{
+        font-weight: 500;
+
+      }
+
+      #buy{
+        background-color: orange;
+        padding: 22px;
+
+      }
+    }
+    #search-btn{
+      /* border: 1px solid red; */
+      padding: 19px 5px;
+      background-color: black;
+      color: aliceblue;
+    }
+  }
+
+}
+
+main{
+
+
+  
+  .container{
+    width: 100%;
+    aspect-ratio:2.5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("https://e1.pxfuel.com/desktop-wallpaper/286/387/desktop-wallpaper-professional-business-backgrounds-posted-by-michelle-mercado-online-business.jpg");
+
+
+    .child{
+
+      p{
+        margin-top: 2%;
+        width: 80%;
+        font-size: 80%;
+      }
+      h1{
+        font-weight: 500;
+      }
+      h4{
+        font-weight: 400;
+      }
+
+      .btn-1{
+        background-image: var(--bg-color);
+        outline: none;
+        border-radius: 20px;
+        padding: 1%;
+      }
+      button{
+        padding: .5%;
+        background-color: transparent;
+        color: aliceblue;
+        border: none;
+        border-radius: 20px;
+        padding: 1%;
+        margin: 2% 2% 0 0;
+        outline: 1px solid var(--bg-color2);
+      }
+      border-left: 4px solid rgb(255, 0, 225);
+      padding-left: 2%;
+      width: 80%;
+      color: aliceblue;
+    }
+  }
+
+  .container2{
+    width: 99vw;
+    aspect-ratio:2.5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("https://img.freepik.com/free-photo/low-angle-businesswoman-posing-with-arms-crossed-outdoors_23-2148767034.jpg?w=900&t=st=1719398589~exp=1719399189~hmac=7b64bdd9b762d6b171675bef4fc46aee2ba198fe42a22d80745a6f93862b52c6");
+
+
+    .child{
+
+      p{
+        margin-top: 2%;
+        width: 80%;
+        font-size: 80%;
+      }
+      h1{
+        font-weight: 500;
+      }
+      h4{
+        font-weight: 400;
+      }
+
+      .btn-1{
+        background-image: var(--bg-color);
+        outline: none;
+        border-radius: 20px;
+        padding: 1%;
+      }
+      button{
+        padding: .5%;
+        background-color: transparent;
+        color: aliceblue;
+        border: none;
+        border-radius: 20px;
+        padding: 1%;
+        margin: 2% 2% 0 0;
+        outline: 1px solid var(--bg-color2);
+      }
+      border-left: 4px solid rgb(255, 0, 225);
+      padding-left: 2%;
+      width: 80%;
+      color: aliceblue;
+    }
+  }
+
+  .container3{
+    width: 99vw;
+    aspect-ratio:2.5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzF8fGJ1c2luZXNzJTIwcHJvZmVzc2lvbmFsfGVufDB8fDB8fHww");
+
+
+    .child{
+
+      p{
+        margin-top: 2%;
+        width: 80%;
+        font-size: 80%;
+      }
+      h1{
+        font-weight: 500;
+      }
+      h4{
+        font-weight: 400;
+      }
+
+      .btn-1{
+        background-image: var(--bg-color);
+        outline: none;
+        border-radius: 20px;
+        padding: 1%;
+      }
+      button{
+        padding: .5%;
+        background-color: transparent;
+        color: aliceblue;
+        border: none;
+        border-radius: 20px;
+        padding: 1%;
+        margin: 2% 2% 0 0;
+        outline: 1px solid var(--bg-color2);
+      }
+      border-left: 4px solid rgb(255, 0, 225);
+      padding-left: 2%;
+      width: 80%;
+      color: aliceblue;
+    }
+  }
+
+  .main-container2{
+    background-image: var(--bg-color);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    height: 150px;  
+    /* padding: 20px; */
+
+
+    p{
+      width: 80%;
+      font-size: 80%;
+      color: var(--font-color);
+    }
+
+    h4{
+
+      color: var(--font-color);
+
+      i{
+        outline: 1px solid;
+        padding: 2%;
+        border-radius: 50%;
+      }
+    }
+  }
+
+  .main-container3{
+    padding: 20px 150px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    
+    h1{
+      font-weight: 400;
+      display: inline-block;
+      border-bottom: 2px solid orange;
+    }
+    h3{
+      margin-top: 2%;
+      font-weight: 500;
+    }
+    p{
+      margin-top: 3%;
+      font-size: 78%;
+      color: rgb(104, 102, 102);
+    }
+    button{
+      margin-top: 2%;
+      background-image: var(--bg-color);
+      color: var(--font-color);
+      border: none;
+      border-radius: 20px;
+      padding: 1% 2%;
+    }
+
+    #child2{
+      
+      img{
+        width: 100%;
+        margin-left: 50px;
+      }
+    }
+
+  }
+
+  .section-4{
+    background-color: blanchedalmond;
+    margin: 50px 0px;
+    padding-bottom: 10px;
+    h1{
+      font-weight: 400;
+      display: inline-block;
+      margin-left: 11%;
+      margin-bottom: 2%;
+
+      span{
+        border-bottom: 2px solid orangered;
+      }
+    }
+
+   
+    /* margin: 50px; */
+  }
+  .main-container4{
+    display: grid;
+    margin-left: 11%;
+    grid-template-columns: repeat(3,1fr);
+   
+
+    .child{
+      /* border: 1px solid red; */
+      img{
+        width: 60%;
+        aspect-ratio: 1.5;
+      }
+
+      .child-child2{
+
+        /* border: 1px solid red; */
+        span{
+          padding:10px 15px;
+          background-color: aliceblue;
+          border-radius: 0px 15px 15px 0px;
+          i{
+            padding: 10px 15px;
+            color: var(--font-color);
+            background-image: var(--bg-color);
+            border-radius: 50%;
+          }
+          font-weight: 500;
+          color: gray;
+           /* border: 1px solid; */
+        }
+      }
+    }
+  }
+
+  .section-5{
+    margin-bottom: 5%;
+    h1{
+      font-weight: 500;
+      margin: 2% 11%;
+      span{
+        border-bottom: 2px solid yellow;
+      }
+    }
+  
+  .main-container5{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    padding:0px 140px;
+    margin-bottom: 2%;
+    
+    .child{
+      /* border: 1px solid red; */
+      width: 100%;
+      height: 500px;
+
+      img{
+        width: 100%;
+        aspect-ratio: 1;
+      }
+    }
+
+    #child1{
+      background-image: url("https://images.inc.com/uploaded_files/image/1920x1080/getty_1084171152_400165.jpg");
+      background-size: cover;
+      background-position: -200px;
+    }
+    #child2{
+      background-image: url("https://www.jll.fi/images/people/people-photography/privacy-in-the-open-plan-office.jpg");
+      background-size: cover;
+      background-position: -200px;
+
+    }
+    #child3{
+      background-image: url("https://cdn-res.keymedia.com/cms/images/ca/126/0405_638012718654874502.jpg");
+      background-size: cover;
+      background-position: -400px;
+    }
+    #child4{
+      background-image: url("https://www.adecco.com/en-us/-/media/project/adecco/adeccous/resources/benefits-for-workers-and-employers-who-return-to-work-header.jpg?h=800&iar=0&w=1920&hash=C26F834AF70384665C47049C19FEBFF8");
+      background-size: cover;
+      background-position: -200px;
+    }
+  }
+
+  button{
+    background-image: var(--bg-color);
+    color: var(--font-color);
+    border: none;
+    display: block;
+    margin: auto;
+    border-radius: 20px;
+    padding: .6% 2%;
+  }
+}
+
+
+.main-container6{
+
+  width: 100%;
+  display: flex;
+
+  .child{
+    
+    /* border: 1px solid red; */
+    img{
+      width: 100%;
+     aspect-ratio: 1.9;
+     border-radius: 0px 9px 9px 0px;
+
+    }
+  }
+
+  #child1{
+    width: 35%;
+  }
+  #child2{
+    width: 65%;
+    margin-top: 20px; 
+    height: 200px;
+    padding: 10px;
+    /* border: 1px solid red; */
+    background-image: var(--bg-color);
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    color: var(--font-color);
+
+    div{
+       /* border: 1px solid red; */
+
+       span{
+        font-size: 10px;
+        font-weight: 700;
+       }
+       h1{
+        font-size: 4rem;
+        font-weight: 400;
+       }
+    }
+  }
+}
+
+
+ .section6{
+  padding:0px 140px;
+  margin: 2% 0%;
+
+  h1{
+    margin-bottom: 2%;
+    font-weight: 500;
+    span{
+      border-bottom: 2px solid orangered;
+    }
+  }
+   .main-container7{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 10px;
+    height: 300px;
+    /* border: 1px solid red; */
+
+
+    .child{
+     /* border: 1px solid red; */
+     display: flex;
+
+     .child-child1{
+      width: 45%;
+      padding: 20px;
+      background-color: rgba(51, 68, 51, 0.767);
+      color: var(--font-color);
+      /* border: 1px solid red; */
+      border-radius: 0px 9px 9px 0px;
+
+      h1,h2{
+        font-weight: 400;
+      }
+      p{
+        font-size: 10px;
+        font-weight: 500;
+        span{
+          letter-spacing: 6px;
+        }
+      }
+     }
+     .child-child2{
+      width:45%;
+      height: 120px;
+      box-shadow: 1px 1px 2px gray;
+      margin-top: 15px;
+      color: gray;
+      padding: 10px 20px;
+      /* border: 1px solid red; */
+
+      li{
+        list-style-type: "✔";
+      }
+     }
+    }
+  }
+ }
+}
+
+
